@@ -1,0 +1,79 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Titre du jeu */
+h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-top: 50px;
+}
+
+/* Conteneur du tableau de jeu */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Style des cases */
+button {
+    width: 150px;
+    height: 150px;
+    font-size: 48px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet de survol des cases */
+button:hover {
+    background-color: #e7e7e7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet au clic */
+button:active {
+    background-color: #d0d0d0;
+    transform: translateY(1px);
+}
+
+/* Style pour les messages */
+p {
+    font-size: 24px;
+    color: #555;
+    margin-top: 30px;
+}
+
+/* Style pour les messages de victoire et match nul */
+p.win-message {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+p.tie-message {
+    color: #FF9800;
+    font-weight: bold;
+}
+
+/* Style pour les cases avec les symboles */
+button:focus {
+    outline: none;
+}
